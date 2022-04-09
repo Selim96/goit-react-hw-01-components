@@ -1,8 +1,10 @@
 import React from "react";
 import Profile from "./profile/Profile";
 import Statistics from "./statistics/Statistics";
-import user from "../user.json";
-import data from "../data.json";
+import FriendList from "./friendList/FriendList";
+import user from "../components/data/user.json";
+import data from "../components/data/data.json";
+import friends from "./data/friends.json";
 
 const { username, avatar, tag, location, stats, } = user;
 
@@ -12,7 +14,8 @@ export const App = () => {
       <Profile username={username} avatar={avatar} tag={tag} location={location} stats={stats}
       />
       <Statistics title="Upload stats" stats={data} />
-      <Statistics stats={data}/>
+      <Statistics stats={data} />
+      <FriendList friends={friends}/>
     </>
   );
 };

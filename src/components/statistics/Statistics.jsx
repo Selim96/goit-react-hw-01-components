@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-// import { flushSync } from "react-dom";
 
 export default function Statistics({title, stats}) {
     return (<section>
