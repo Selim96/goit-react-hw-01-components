@@ -8,12 +8,15 @@ import data from "../components/data/data.json";
 import friends from "./data/friends.json";
 import transactions from "./data/transactions.json";
 
-const { username, avatar, tag, location, stats, } = user;
-
 export const App = () => {
   return (
     <>
-      <Profile username={username} avatar={avatar} tag={tag} location={location} stats={stats}
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
       />
       <Statistics title="Upload stats" stats={data} />
       <Statistics stats={data} />
