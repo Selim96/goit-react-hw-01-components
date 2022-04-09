@@ -1,7 +1,7 @@
 import TransactionItem from "../transactionItems/transactionItem";
 import PropTypes from "prop-types";
 
-export default function TransactionHistory({trns}) {
+export default function TransactionHistory({items}) {
     return (
         <table class="transaction-history">
             <thead>
@@ -13,7 +13,7 @@ export default function TransactionHistory({trns}) {
             </thead>
 
             <tbody>
-                {trns.map((trn) =>
+                {items.map((trn) =>
                 (<tr key={trn.id}>
                     <TransactionItem item={trn} />
                 </tr>)
@@ -24,5 +24,5 @@ export default function TransactionHistory({trns}) {
 }
 
 TransactionHistory.propTypes = {
-    trns: PropTypes.arrayOf(PropTypes.object),
+    items: PropTypes.arrayOf(PropTypes.object),
 }
