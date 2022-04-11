@@ -1,0 +1,25 @@
+.friendList {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.25),
+    -4px 0px 3px rgba(0, 0, 0, 0.25);
+}
+
+.item:not(:last-child) {
+    margin-bottom: 5px;
+}
